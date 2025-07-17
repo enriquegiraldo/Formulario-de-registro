@@ -1,70 +1,92 @@
-# Getting Started with Create React App
+# Componentes Funcionales React
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Descripción
 
-## Available Scripts
+Este proyecto es una aplicación de React que demuestra el uso de componentes funcionales y de clase, así como la implementación de un formulario de registro con validación utilizando Material UI. El proyecto sirve como ejemplo educativo para entender las diferencias entre los distintos tipos de componentes en React y cómo manejar formularios con validación.
 
-In the project directory, you can run:
+## Características
 
-### `npm start`
+- Comparación entre componentes funcionales y de clase
+- Implementación de un contador en ambos tipos de componentes
+- Formulario de registro con validación de campos
+- Uso de Material UI para la interfaz de usuario
+- Manejo de estado con useState en componentes funcionales
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## Tecnologías Utilizadas
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+- React 19
+- Material UI 7
+- Emotion (para estilos)
+- React Testing Library
 
-### `npm test`
+## Componentes Principales
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+### FuncComponent
 
-### `npm run build`
+Un componente funcional simple que implementa un contador utilizando el hook useState.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+### ClassComponent
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+Un componente de clase que implementa la misma funcionalidad de contador pero utilizando el estado de clase y métodos de ciclo de vida.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+### FormSignUp
 
-### `npm run eject`
+Un formulario de registro implementado como componente funcional que incluye:
+- Validación de campos (nombre, apellido, email)
+- Switches para opciones de promociones y novedades
+- Manejo de errores en tiempo real
+- Envío de datos al componente padre
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+## Instalación
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+```bash
+# Clonar el repositorio
+git clone <url-del-repositorio>
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+# Navegar al directorio del proyecto
+cd componentes-funcionales
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+# Instalar dependencias
+npm install
 
-## Learn More
+# Iniciar la aplicación en modo desarrollo
+npm start
+```
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+## Scripts Disponibles
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+- `npm start`: Inicia la aplicación en modo desarrollo
+- `npm build`: Compila la aplicación para producción
+- `npm test`: Ejecuta las pruebas
+- `npm eject`: Expone la configuración de webpack (¡usar con precaución!)
 
-### Code Splitting
+## Estructura del Proyecto
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+```
+├── public/
+│   ├── favicon.ico
+│   ├── index.html
+│   ├── manifest.json
+│   └── robots.txt
+└── src/
+    ├── App.css
+    ├── App.js
+    ├── App.test.js
+    ├── components/
+    │   ├── ClassComponent.jsx
+    │   ├── FormSignUp.jsx
+    │   └── FuncComponent.jsx
+    ├── index.css
+    ├── index.js
+    ├── logo.svg
+    ├── reportWebVitals.js
+    └── setupTests.js
+```
 
-### Analyzing the Bundle Size
+## Licencia
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+Este proyecto está bajo la Licencia MIT - ver el archivo LICENSE para más detalles.
 
-### Making a Progressive Web App
+---
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Este proyecto fue creado con [Create React App](https://github.com/facebook/create-react-app).
