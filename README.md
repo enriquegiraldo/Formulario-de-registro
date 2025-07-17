@@ -41,7 +41,7 @@ Un formulario de registro implementado como componente funcional que incluye:
 
 ```bash
 # Clonar el repositorio
-git clone <url-del-repositorio>
+git clone git@github.com:enriquegiraldo/Formulario-de-registro.git
 
 # Navegar al directorio del proyecto
 cd componentes-funcionales
